@@ -14,7 +14,20 @@ var common_config = {
     //   NODE_ENV: JSON.stringify(NODE_ENV),
     //   LANG: '"ru"'
     // })
-  ]
+  ],
+  module: {
+    loaders: [
+      {
+        test: /\.js$/,
+        exclude: 'node_modules',
+        loader: 'babel',
+        query: {
+          presets: ['es2015'],
+          plugins: ['transform-runtime']  
+        }
+      }
+    ]
+  }
 }
 
 var dev_config = {

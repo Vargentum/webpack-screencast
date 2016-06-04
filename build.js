@@ -45,18 +45,31 @@ var home =
 /* 0 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var welcome = __webpack_require__(1)
-	exports.welcome = welcome
+	'use strict';
+	
+	var _welcome = __webpack_require__(1);
+	
+	var _welcome2 = _interopRequireDefault(_welcome);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	exports.welcome = _welcome2.default;
 
 /***/ },
 /* 1 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(process) {module.exports = function(who) {
+	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	exports.default = function (who) {
 	
 	  // EnvironmentPlugin
 	  if (true) {
-	    console.log(process.env) // {}
+	    console.log(process.env); // {}
 	  }
 	
 	  // DefinePlugin
@@ -64,14 +77,16 @@ var home =
 	  //   console.log(process.env) // {}
 	  // }
 	
-	  console.log('Hello ' + who)
-	}
+	  console.log('Hello ' + who);
+	};
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(2)))
 
 /***/ },
 /* 2 */
 /***/ function(module, exports) {
 
+	'use strict';
+	
 	// shim for using process in browser
 	
 	var process = module.exports = {};
@@ -103,7 +118,7 @@ var home =
 	    draining = true;
 	
 	    var len = queue.length;
-	    while(len) {
+	    while (len) {
 	        currentQueue = queue;
 	        queue = [];
 	        while (++queueIndex < len) {
@@ -161,12 +176,15 @@ var home =
 	    throw new Error('process.binding is not supported');
 	};
 	
-	process.cwd = function () { return '/' };
+	process.cwd = function () {
+	    return '/';
+	};
 	process.chdir = function (dir) {
 	    throw new Error('process.chdir is not supported');
 	};
-	process.umask = function() { return 0; };
-
+	process.umask = function () {
+	    return 0;
+	};
 
 /***/ }
 /******/ ]);

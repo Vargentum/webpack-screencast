@@ -1,4 +1,4 @@
-module.exports = function(who) {
+export default function(who) {
 
   // EnvironmentPlugin
   if (process.env.NODE_ENV === 'development') {
