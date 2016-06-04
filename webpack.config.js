@@ -15,6 +15,15 @@ var common_config = {
     //   LANG: '"ru"'
     // })
   ],
+  resolve: {
+    extensions: ['.js', ''],
+    modulesDirectories: ['node_modules']
+  },
+  resolveLoader: {
+    extensions: ['.js', ''],
+    modulesDirectories: ['node_modules'],
+    moduleTemplates: ['*-loader', '*']
+  },
   module: {
     loaders: [
       {
