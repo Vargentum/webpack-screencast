@@ -47,7 +47,16 @@ var dev_config = {
   devtool: 'source-map'
 }
 
-var prod_config = {}
+var prod_config = {
+  plugins: [
+    new webpack.optimize.UglifyJsPlugin({
+      compress: {
+        warnings: false,
+        drop_console: true
+      }
+    })
+  ]
+}
 
 module.exports = Object.assign(
   common_config, NODE_ENV === 'development' ? dev_config : prod_config
