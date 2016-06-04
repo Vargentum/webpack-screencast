@@ -2,10 +2,15 @@ var NODE_ENV = process.env.NODE_ENV || 'development'
 var webpack = require('webpack')
 
 var common_config = {
-  entry: "./home",
+  context: __dirname + '/frontend',
+  entry: {
+    home: './home',
+    about: './about'
+  },
   output: {
-    filename: "build.js",
-    library: 'home'
+    path: __dirname + '/public',
+    filename: '[name].js',
+    library: '[name]'
   },
   plugins: [
     new webpack.EnvironmentPlugin('NODE_ENV', 'USER') //way 1
