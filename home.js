@@ -1,3 +1,3 @@
 var welcome = require('./welcome')
 
-welcome('Home')
+exports.welcome = welcome
