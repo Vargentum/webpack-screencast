@@ -5,8 +5,7 @@ var common_config = {
   context: __dirname + '/frontend',
   entry: {
     home: './home',
-    about: './about',
-    welcome: './welcome'
+    about: './about'
   },
   output: {
     path: __dirname + '/public',
@@ -15,12 +14,10 @@ var common_config = {
   },
   plugins: [
     new webpack.NoErrorsPlugin(),
-    new webpack.EnvironmentPlugin('NODE_ENV', 'USER') //way 1
-    // way 2
-    // new webpack.DefinePlugin({
-    //   NODE_ENV: JSON.stringify(NODE_ENV),
-    //   LANG: '"ru"'
-    // })
+    new webpack.DefinePlugin({
+      NODE_ENV: JSON.stringify(NODE_ENV),
+      LANG: '"ru"'
+    }),
   ],
   resolve: {
     extensions: ['.js', ''],
@@ -51,7 +48,7 @@ var dev_config = {
   watchOptions: {
     aggregateTimeout: 100
   },
-  devtool: 'source-map'
+  devtool: 'eval'
 }
 
 var prod_config = {

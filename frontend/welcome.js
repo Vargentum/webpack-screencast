@@ -1,7 +1,7 @@
 export default function(who) {
 
   // EnvironmentPlugin
-  if (process.env.NODE_ENV === 'development') {
+  if (NODE_ENV === 'development') {
     console.log(process.env) // {}
   }
 
