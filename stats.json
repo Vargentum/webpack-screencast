@@ -1,0 +1,406 @@
+{
+  "errors": [],
+  "warnings": [],
+  "version": "1.13.1",
+  "hash": "7c58983ae338fa0739bf",
+  "time": 5121,
+  "publicPath": "",
+  "assetsByChunkName": {
+    "about": "about.js",
+    "home": "home.js",
+    "common": "common.js"
+  },
+  "assets": [
+    {
+      "name": "about.js",
+      "size": 515,
+      "chunks": [
+        0
+      ],
+      "chunkNames": [
+        "about"
+      ],
+      "emitted": true
+    },
+    {
+      "name": "home.js",
+      "size": 512,
+      "chunks": [
+        1
+      ],
+      "chunkNames": [
+        "home"
+      ],
+      "emitted": true
+    },
+    {
+      "name": "common.js",
+      "size": 6823,
+      "chunks": [
+        2
+      ],
+      "chunkNames": [
+        "common"
+      ],
+      "emitted": true
+    }
+  ],
+  "chunks": [
+    {
+      "id": 0,
+      "rendered": true,
+      "initial": true,
+      "entry": false,
+      "extraAsync": false,
+      "size": 237,
+      "names": [
+        "about"
+      ],
+      "files": [
+        "about.js"
+      ],
+      "hash": "8653a4bfbb4a63702780",
+      "parents": [
+        2
+      ],
+      "modules": [
+        {
+          "id": 0,
+          "identifier": "/Users/administrator/personal-projects/javascript.ru/webpack-screencast/node_modules/babel-loader/index.js?{\"presets\":[\"es2015\"],\"plugins\":[\"transform-runtime\"]}!/Users/administrator/personal-projects/javascript.ru/webpack-screencast/frontend/about.js",
+          "name": "./about.js",
+          "index": 0,
+          "index2": 2,
+          "size": 237,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            0
+          ],
+          "assets": [],
+          "issuer": null,
+          "profile": {
+            "factory": 377,
+            "building": 4603,
+            "dependencies": 3
+          },
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "reasons": [],
+          "source": "'use strict';\n\nvar _welcome = require('./welcome');\n\nvar _welcome2 = _interopRequireDefault(_welcome);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nexports.welcome = _welcome2.default;"
+        }
+      ],
+      "filteredModules": 0,
+      "origins": [
+        {
+          "moduleId": 0,
+          "module": "/Users/administrator/personal-projects/javascript.ru/webpack-screencast/node_modules/babel-loader/index.js?{\"presets\":[\"es2015\"],\"plugins\":[\"transform-runtime\"]}!/Users/administrator/personal-projects/javascript.ru/webpack-screencast/frontend/about.js",
+          "moduleIdentifier": "/Users/administrator/personal-projects/javascript.ru/webpack-screencast/node_modules/babel-loader/index.js?{\"presets\":[\"es2015\"],\"plugins\":[\"transform-runtime\"]}!/Users/administrator/personal-projects/javascript.ru/webpack-screencast/frontend/about.js",
+          "moduleName": "./about.js",
+          "loc": "",
+          "name": "about",
+          "reasons": []
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "rendered": true,
+      "initial": true,
+      "entry": false,
+      "extraAsync": false,
+      "size": 237,
+      "names": [
+        "home"
+      ],
+      "files": [
+        "home.js"
+      ],
+      "hash": "b77553c29e77c3b3470b",
+      "parents": [
+        2
+      ],
+      "modules": [
+        {
+          "id": 0,
+          "identifier": "/Users/administrator/personal-projects/javascript.ru/webpack-screencast/node_modules/babel-loader/index.js?{\"presets\":[\"es2015\"],\"plugins\":[\"transform-runtime\"]}!/Users/administrator/personal-projects/javascript.ru/webpack-screencast/frontend/home.js",
+          "name": "./home.js",
+          "index": 3,
+          "index2": 3,
+          "size": 237,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            1
+          ],
+          "assets": [],
+          "issuer": null,
+          "profile": {
+            "factory": 19,
+            "building": 4945
+          },
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "reasons": [],
+          "source": "'use strict';\n\nvar _welcome = require('./welcome');\n\nvar _welcome2 = _interopRequireDefault(_welcome);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nexports.welcome = _welcome2.default;"
+        }
+      ],
+      "filteredModules": 0,
+      "origins": [
+        {
+          "moduleId": 0,
+          "module": "/Users/administrator/personal-projects/javascript.ru/webpack-screencast/node_modules/babel-loader/index.js?{\"presets\":[\"es2015\"],\"plugins\":[\"transform-runtime\"]}!/Users/administrator/personal-projects/javascript.ru/webpack-screencast/frontend/home.js",
+          "moduleIdentifier": "/Users/administrator/personal-projects/javascript.ru/webpack-screencast/node_modules/babel-loader/index.js?{\"presets\":[\"es2015\"],\"plugins\":[\"transform-runtime\"]}!/Users/administrator/personal-projects/javascript.ru/webpack-screencast/frontend/home.js",
+          "moduleName": "./home.js",
+          "loc": "",
+          "name": "home",
+          "reasons": []
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "rendered": true,
+      "initial": true,
+      "entry": true,
+      "extraAsync": false,
+      "size": 2494,
+      "names": [
+        "common"
+      ],
+      "files": [
+        "common.js"
+      ],
+      "hash": "12f204b15e514336e0ff",
+      "parents": [],
+      "modules": [
+        {
+          "id": 1,
+          "identifier": "/Users/administrator/personal-projects/javascript.ru/webpack-screencast/node_modules/babel-loader/index.js?{\"presets\":[\"es2015\"],\"plugins\":[\"transform-runtime\"]}!/Users/administrator/personal-projects/javascript.ru/webpack-screencast/frontend/welcome.js",
+          "name": "./welcome.js",
+          "index": 1,
+          "index2": 1,
+          "size": 353,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            2
+          ],
+          "assets": [],
+          "issuer": "/Users/administrator/personal-projects/javascript.ru/webpack-screencast/node_modules/babel-loader/index.js?{\"presets\":[\"es2015\"],\"plugins\":[\"transform-runtime\"]}!/Users/administrator/personal-projects/javascript.ru/webpack-screencast/frontend/home.js",
+          "profile": {
+            "factory": 21,
+            "building": 27
+          },
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "reasons": [
+            {
+              "moduleId": 0,
+              "moduleIdentifier": "/Users/administrator/personal-projects/javascript.ru/webpack-screencast/node_modules/babel-loader/index.js?{\"presets\":[\"es2015\"],\"plugins\":[\"transform-runtime\"]}!/Users/administrator/personal-projects/javascript.ru/webpack-screencast/frontend/home.js",
+              "module": "./home.js",
+              "moduleName": "./home.js",
+              "type": "cjs require",
+              "userRequest": "./welcome",
+              "loc": "3:15-35"
+            },
+            {
+              "moduleId": 0,
+              "moduleIdentifier": "/Users/administrator/personal-projects/javascript.ru/webpack-screencast/node_modules/babel-loader/index.js?{\"presets\":[\"es2015\"],\"plugins\":[\"transform-runtime\"]}!/Users/administrator/personal-projects/javascript.ru/webpack-screencast/frontend/about.js",
+              "module": "./about.js",
+              "moduleName": "./about.js",
+              "type": "cjs require",
+              "userRequest": "./welcome",
+              "loc": "3:15-35"
+            }
+          ],
+          "source": "'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nexports.default = function (who) {\n\n  // EnvironmentPlugin\n  if (NODE_ENV === 'development') {\n    console.log(process.env); // {}\n  }\n\n  // DefinePlugin\n  // if (NODE_ENV === 'development') {\n  //   console.log(process.env) // {}\n  // }\n\n  console.log('Hello ' + who);\n};"
+        },
+        {
+          "id": 2,
+          "identifier": "/Users/administrator/personal-projects/javascript.ru/webpack-screencast/node_modules/babel-loader/index.js?{\"presets\":[\"es2015\"],\"plugins\":[\"transform-runtime\"]}!/Users/administrator/personal-projects/javascript.ru/webpack-screencast/node_modules/webpack/node_modules/node-libs-browser/node_modules/process/browser.js",
+          "name": "../~/webpack/~/node-libs-browser/~/process/browser.js",
+          "index": 2,
+          "index2": 0,
+          "size": 2141,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            2
+          ],
+          "assets": [],
+          "issuer": "/Users/administrator/personal-projects/javascript.ru/webpack-screencast/node_modules/babel-loader/index.js?{\"presets\":[\"es2015\"],\"plugins\":[\"transform-runtime\"]}!/Users/administrator/personal-projects/javascript.ru/webpack-screencast/frontend/welcome.js",
+          "profile": {
+            "factory": 2,
+            "building": 80
+          },
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "reasons": [
+            {
+              "moduleId": 1,
+              "moduleIdentifier": "/Users/administrator/personal-projects/javascript.ru/webpack-screencast/node_modules/babel-loader/index.js?{\"presets\":[\"es2015\"],\"plugins\":[\"transform-runtime\"]}!/Users/administrator/personal-projects/javascript.ru/webpack-screencast/frontend/welcome.js",
+              "module": "./welcome.js",
+              "moduleName": "./welcome.js",
+              "type": "cjs require",
+              "userRequest": "process",
+              "loc": "1:0-166"
+            }
+          ],
+          "source": "'use strict';\n\n// shim for using process in browser\n\nvar process = module.exports = {};\nvar queue = [];\nvar draining = false;\nvar currentQueue;\nvar queueIndex = -1;\n\nfunction cleanUpNextTick() {\n    if (!draining || !currentQueue) {\n        return;\n    }\n    draining = false;\n    if (currentQueue.length) {\n        queue = currentQueue.concat(queue);\n    } else {\n        queueIndex = -1;\n    }\n    if (queue.length) {\n        drainQueue();\n    }\n}\n\nfunction drainQueue() {\n    if (draining) {\n        return;\n    }\n    var timeout = setTimeout(cleanUpNextTick);\n    draining = true;\n\n    var len = queue.length;\n    while (len) {\n        currentQueue = queue;\n        queue = [];\n        while (++queueIndex < len) {\n            if (currentQueue) {\n                currentQueue[queueIndex].run();\n            }\n        }\n        queueIndex = -1;\n        len = queue.length;\n    }\n    currentQueue = null;\n    draining = false;\n    clearTimeout(timeout);\n}\n\nprocess.nextTick = function (fun) {\n    var args = new Array(arguments.length - 1);\n    if (arguments.length > 1) {\n        for (var i = 1; i < arguments.length; i++) {\n            args[i - 1] = arguments[i];\n        }\n    }\n    queue.push(new Item(fun, args));\n    if (queue.length === 1 && !draining) {\n        setTimeout(drainQueue, 0);\n    }\n};\n\n// v8 likes predictible objects\nfunction Item(fun, array) {\n    this.fun = fun;\n    this.array = array;\n}\nItem.prototype.run = function () {\n    this.fun.apply(null, this.array);\n};\nprocess.title = 'browser';\nprocess.browser = true;\nprocess.env = {};\nprocess.argv = [];\nprocess.version = ''; // empty string to avoid regexp issues\nprocess.versions = {};\n\nfunction noop() {}\n\nprocess.on = noop;\nprocess.addListener = noop;\nprocess.once = noop;\nprocess.off = noop;\nprocess.removeListener = noop;\nprocess.removeAllListeners = noop;\nprocess.emit = noop;\n\nprocess.binding = function (name) {\n    throw new Error('process.binding is not supported');\n};\n\nprocess.cwd = function () {\n    return '/';\n};\nprocess.chdir = function (dir) {\n    throw new Error('process.chdir is not supported');\n};\nprocess.umask = function () {\n    return 0;\n};"
+        }
+      ],
+      "filteredModules": 0,
+      "origins": []
+    }
+  ],
+  "modules": [
+    {
+      "id": 0,
+      "identifier": "/Users/administrator/personal-projects/javascript.ru/webpack-screencast/node_modules/babel-loader/index.js?{\"presets\":[\"es2015\"],\"plugins\":[\"transform-runtime\"]}!/Users/administrator/personal-projects/javascript.ru/webpack-screencast/frontend/about.js",
+      "name": "./about.js",
+      "index": 0,
+      "index2": 2,
+      "size": 237,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        0
+      ],
+      "assets": [],
+      "issuer": null,
+      "profile": {
+        "factory": 377,
+        "building": 4603,
+        "dependencies": 3
+      },
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "reasons": [],
+      "source": "'use strict';\n\nvar _welcome = require('./welcome');\n\nvar _welcome2 = _interopRequireDefault(_welcome);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nexports.welcome = _welcome2.default;"
+    },
+    {
+      "id": 0,
+      "identifier": "/Users/administrator/personal-projects/javascript.ru/webpack-screencast/node_modules/babel-loader/index.js?{\"presets\":[\"es2015\"],\"plugins\":[\"transform-runtime\"]}!/Users/administrator/personal-projects/javascript.ru/webpack-screencast/frontend/home.js",
+      "name": "./home.js",
+      "index": 3,
+      "index2": 3,
+      "size": 237,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        1
+      ],
+      "assets": [],
+      "issuer": null,
+      "profile": {
+        "factory": 19,
+        "building": 4945
+      },
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "reasons": [],
+      "source": "'use strict';\n\nvar _welcome = require('./welcome');\n\nvar _welcome2 = _interopRequireDefault(_welcome);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nexports.welcome = _welcome2.default;"
+    },
+    {
+      "id": 1,
+      "identifier": "/Users/administrator/personal-projects/javascript.ru/webpack-screencast/node_modules/babel-loader/index.js?{\"presets\":[\"es2015\"],\"plugins\":[\"transform-runtime\"]}!/Users/administrator/personal-projects/javascript.ru/webpack-screencast/frontend/welcome.js",
+      "name": "./welcome.js",
+      "index": 1,
+      "index2": 1,
+      "size": 353,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        2
+      ],
+      "assets": [],
+      "issuer": "/Users/administrator/personal-projects/javascript.ru/webpack-screencast/node_modules/babel-loader/index.js?{\"presets\":[\"es2015\"],\"plugins\":[\"transform-runtime\"]}!/Users/administrator/personal-projects/javascript.ru/webpack-screencast/frontend/home.js",
+      "profile": {
+        "factory": 21,
+        "building": 27
+      },
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "reasons": [
+        {
+          "moduleId": 0,
+          "moduleIdentifier": "/Users/administrator/personal-projects/javascript.ru/webpack-screencast/node_modules/babel-loader/index.js?{\"presets\":[\"es2015\"],\"plugins\":[\"transform-runtime\"]}!/Users/administrator/personal-projects/javascript.ru/webpack-screencast/frontend/home.js",
+          "module": "./home.js",
+          "moduleName": "./home.js",
+          "type": "cjs require",
+          "userRequest": "./welcome",
+          "loc": "3:15-35"
+        },
+        {
+          "moduleId": 0,
+          "moduleIdentifier": "/Users/administrator/personal-projects/javascript.ru/webpack-screencast/node_modules/babel-loader/index.js?{\"presets\":[\"es2015\"],\"plugins\":[\"transform-runtime\"]}!/Users/administrator/personal-projects/javascript.ru/webpack-screencast/frontend/about.js",
+          "module": "./about.js",
+          "moduleName": "./about.js",
+          "type": "cjs require",
+          "userRequest": "./welcome",
+          "loc": "3:15-35"
+        }
+      ],
+      "source": "'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nexports.default = function (who) {\n\n  // EnvironmentPlugin\n  if (NODE_ENV === 'development') {\n    console.log(process.env); // {}\n  }\n\n  // DefinePlugin\n  // if (NODE_ENV === 'development') {\n  //   console.log(process.env) // {}\n  // }\n\n  console.log('Hello ' + who);\n};"
+    },
+    {
+      "id": 2,
+      "identifier": "/Users/administrator/personal-projects/javascript.ru/webpack-screencast/node_modules/babel-loader/index.js?{\"presets\":[\"es2015\"],\"plugins\":[\"transform-runtime\"]}!/Users/administrator/personal-projects/javascript.ru/webpack-screencast/node_modules/webpack/node_modules/node-libs-browser/node_modules/process/browser.js",
+      "name": "../~/webpack/~/node-libs-browser/~/process/browser.js",
+      "index": 2,
+      "index2": 0,
+      "size": 2141,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        2
+      ],
+      "assets": [],
+      "issuer": "/Users/administrator/personal-projects/javascript.ru/webpack-screencast/node_modules/babel-loader/index.js?{\"presets\":[\"es2015\"],\"plugins\":[\"transform-runtime\"]}!/Users/administrator/personal-projects/javascript.ru/webpack-screencast/frontend/welcome.js",
+      "profile": {
+        "factory": 2,
+        "building": 80
+      },
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "reasons": [
+        {
+          "moduleId": 1,
+          "moduleIdentifier": "/Users/administrator/personal-projects/javascript.ru/webpack-screencast/node_modules/babel-loader/index.js?{\"presets\":[\"es2015\"],\"plugins\":[\"transform-runtime\"]}!/Users/administrator/personal-projects/javascript.ru/webpack-screencast/frontend/welcome.js",
+          "module": "./welcome.js",
+          "moduleName": "./welcome.js",
+          "type": "cjs require",
+          "userRequest": "process",
+          "loc": "1:0-166"
+        }
+      ],
+      "source": "'use strict';\n\n// shim for using process in browser\n\nvar process = module.exports = {};\nvar queue = [];\nvar draining = false;\nvar currentQueue;\nvar queueIndex = -1;\n\nfunction cleanUpNextTick() {\n    if (!draining || !currentQueue) {\n        return;\n    }\n    draining = false;\n    if (currentQueue.length) {\n        queue = currentQueue.concat(queue);\n    } else {\n        queueIndex = -1;\n    }\n    if (queue.length) {\n        drainQueue();\n    }\n}\n\nfunction drainQueue() {\n    if (draining) {\n        return;\n    }\n    var timeout = setTimeout(cleanUpNextTick);\n    draining = true;\n\n    var len = queue.length;\n    while (len) {\n        currentQueue = queue;\n        queue = [];\n        while (++queueIndex < len) {\n            if (currentQueue) {\n                currentQueue[queueIndex].run();\n            }\n        }\n        queueIndex = -1;\n        len = queue.length;\n    }\n    currentQueue = null;\n    draining = false;\n    clearTimeout(timeout);\n}\n\nprocess.nextTick = function (fun) {\n    var args = new Array(arguments.length - 1);\n    if (arguments.length > 1) {\n        for (var i = 1; i < arguments.length; i++) {\n            args[i - 1] = arguments[i];\n        }\n    }\n    queue.push(new Item(fun, args));\n    if (queue.length === 1 && !draining) {\n        setTimeout(drainQueue, 0);\n    }\n};\n\n// v8 likes predictible objects\nfunction Item(fun, array) {\n    this.fun = fun;\n    this.array = array;\n}\nItem.prototype.run = function () {\n    this.fun.apply(null, this.array);\n};\nprocess.title = 'browser';\nprocess.browser = true;\nprocess.env = {};\nprocess.argv = [];\nprocess.version = ''; // empty string to avoid regexp issues\nprocess.versions = {};\n\nfunction noop() {}\n\nprocess.on = noop;\nprocess.addListener = noop;\nprocess.once = noop;\nprocess.off = noop;\nprocess.removeListener = noop;\nprocess.removeAllListeners = noop;\nprocess.emit = noop;\n\nprocess.binding = function (name) {\n    throw new Error('process.binding is not supported');\n};\n\nprocess.cwd = function () {\n    return '/';\n};\nprocess.chdir = function (dir) {\n    throw new Error('process.chdir is not supported');\n};\nprocess.umask = function () {\n    return 0;\n};"
+    }
+  ],
+  "filteredModules": 0,
+  "children": []
+}
