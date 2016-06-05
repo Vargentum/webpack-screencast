@@ -5,7 +5,8 @@ var common_config = {
   context: __dirname + '/frontend',
   entry: {
     home: './home',
-    about: './about'
+    about: './about',
+    common: ['./welcome', './common']  //exported last module only
   },
   output: {
     path: __dirname + '/public',
@@ -19,8 +20,14 @@ var common_config = {
       LANG: '"ru"'
     }),
     new webpack.optimize.CommonsChunkPlugin({
-      name: "common"
+      name: "common",
+      chunks: ["about", "home"]
     })
+    // 
+    // ,new webpack.optimize.CommonsChunkPlugin({
+    //   name: "other-common",
+    //   chunks: ["entry-point-1", "entry-point-2"]
+    // }),
   ],
   resolve: {
     extensions: ['.js', ''],
