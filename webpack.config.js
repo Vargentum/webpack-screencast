@@ -5,7 +5,8 @@ var common_config = {
   context: __dirname + '/frontend',
   entry: {
     home: './home',
-    about: './about'
+    about: './about',
+    welcome: './welcome'
   },
   output: {
     path: __dirname + '/public',
@@ -13,6 +14,7 @@ var common_config = {
     library: '[name]'
   },
   plugins: [
+    new webpack.NoErrorsPlugin(),
     new webpack.EnvironmentPlugin('NODE_ENV', 'USER') //way 1
     // way 2
     // new webpack.DefinePlugin({
