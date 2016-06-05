@@ -18,6 +18,9 @@ var common_config = {
       NODE_ENV: JSON.stringify(NODE_ENV),
       LANG: '"ru"'
     }),
+    new webpack.optimize.CommonsChunkPlugin({
+      name: "common"
+    })
   ],
   resolve: {
     extensions: ['.js', ''],
