@@ -1,3 +1,3 @@
 module.exports = function() {
-  console.log("Logged In")
+  console.log("Logged Out")
 }
