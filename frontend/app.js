@@ -16,6 +16,9 @@ document.getElementById('log-in').addEventListener('click', handleLogin)
 document.getElementById('log-out').addEventListener('click', handleLogout)
 
 
-const context = location.pathname.slice(1)
-const route = require(`./routes/${context}`)
-route()
+const context = require.context('./routes', false, /\.js$/)
+
+context.keys().forEach((route) => {
+  const module = context(route)
+  module()
+})
