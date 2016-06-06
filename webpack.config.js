@@ -10,6 +10,7 @@ var common_config = {
   },
   output: {
     path: __dirname + '/public',
+    publicPath: '/',
     filename: '[name].js',
     library: '[name]'
   },
