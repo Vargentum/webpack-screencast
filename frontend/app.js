@@ -14,3 +14,8 @@ const handleLogout = () => {
 
 document.getElementById('log-in').addEventListener('click', handleLogin)
 document.getElementById('log-out').addEventListener('click', handleLogout)
+
+
+const context = location.pathname.slice(1)
+const route = require(`./routes/${context}`)
+route()
