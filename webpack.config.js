@@ -17,6 +17,9 @@ var common_config = {
     new webpack.DefinePlugin({
       NODE_ENV: JSON.stringify(NODE_ENV),
       LANG: '"ru"'
+    }),
+    new webpack.ProvidePlugin({
+      map: 'lodash/collection/map'
     })
   ],
   resolve: {
@@ -35,8 +38,10 @@ var common_config = {
         exclude: 'node_modules',
         loader: 'babel',
         query: {
-          presets: ['es2015'],
-          plugins: ['transform-runtime']  
+          presets: ['es2015']
+          // Disabled in reason of Error generating: 
+          // Module build failed: ReferenceError: Unknown plugin "transform-runtime" specified in "base" at 0, attempted to resolve relative to "/Users/administrator/node_modules/lodash/collection"
+          // plugins: ['transform-runtime'] 
         }
       }
     ]
