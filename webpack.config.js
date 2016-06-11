@@ -45,10 +45,16 @@ var common_config = {
           // plugins: ['transform-runtime'] 
         }
       }
-    ]
+    ],
   },
   externals: {
     lodash: '_'
+  },
+  resolve: {
+    root: __dirname + '/vendor',
+    alias: {
+      old: 'old/dist/old'
+    }
   }
 }
 
@@ -56,8 +62,8 @@ var dev_config = {
   watch: true,
   watchOptions: {
     aggregateTimeout: 100
-  },
-  devtool: 'eval'
+  }
+  // devtool: 'eval'
 }
 
 var prod_config = {
