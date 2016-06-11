@@ -36,6 +36,7 @@ var common_config = {
       {
         test: /\.js$/,
         exclude: 'node_modules',
+        include: __dirname + '/frontend',
         loader: 'babel',
         query: {
           presets: ['es2015']
