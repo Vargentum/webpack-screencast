@@ -40,6 +40,9 @@ var common_config = {
         }
       }
     ]
+  },
+  externals: {
+    lodash: '_'
   }
 }
 

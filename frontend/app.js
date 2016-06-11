@@ -1,3 +1,6 @@
+let _ = require('lodash')
+
+
 const handleLogin = () => {
   require.ensure([], (require) => {
     const login = require('./login')

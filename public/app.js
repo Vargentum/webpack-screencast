@@ -96,25 +96,31 @@ var app =
 /* 0 */
 /***/ function(module, exports, __webpack_require__) {
 
-	eval("'use strict';\n\nvar handleLogin = function handleLogin() {\n  __webpack_require__.e/* nsure */(1, function (require) {\n    var login = __webpack_require__(4);\n    login();\n  });\n};\n\nvar handleLogout = function handleLogout() {\n  __webpack_require__.e/* nsure */(1, function (require) {\n    var logout = __webpack_require__(5);\n    logout();\n  });\n};\n\ndocument.getElementById('log-in').addEventListener('click', handleLogin);\ndocument.getElementById('log-out').addEventListener('click', handleLogout);\n\nvar context = __webpack_require__(1);\n\ncontext.keys().forEach(function (route) {\n  var module = context(route);\n  module();\n});\n\n/*****************\n ** WEBPACK FOOTER\n ** ./app.js\n ** module id = 0\n ** module chunks = 0\n **/\n//# sourceURL=webpack:///./app.js?");
+	eval("'use strict';\n\nvar _ = __webpack_require__(1);\n\nvar handleLogin = function handleLogin() {\n  __webpack_require__.e/* nsure */(1, function (require) {\n    var login = __webpack_require__(5);\n    login();\n  });\n};\n\nvar handleLogout = function handleLogout() {\n  __webpack_require__.e/* nsure */(1, function (require) {\n    var logout = __webpack_require__(6);\n    logout();\n  });\n};\n\ndocument.getElementById('log-in').addEventListener('click', handleLogin);\ndocument.getElementById('log-out').addEventListener('click', handleLogout);\n\nvar context = __webpack_require__(2);\n\ncontext.keys().forEach(function (route) {\n  var module = context(route);\n  module();\n});\n\n/*****************\n ** WEBPACK FOOTER\n ** ./app.js\n ** module id = 0\n ** module chunks = 0\n **/\n//# sourceURL=webpack:///./app.js?");
 
 /***/ },
 /* 1 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ function(module, exports) {
 
-	eval("var map = {\n\t\"./about.js\": 2,\n\t\"./home.js\": 3\n};\nfunction webpackContext(req) {\n\treturn __webpack_require__(webpackContextResolve(req));\n};\nfunction webpackContextResolve(req) {\n\treturn map[req] || (function() { throw new Error(\"Cannot find module '\" + req + \"'.\") }());\n};\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = 1;\n\n\n/*****************\n ** WEBPACK FOOTER\n ** ./routes nonrecursive \\.js$\n ** module id = 1\n ** module chunks = 0\n **/\n//# sourceURL=webpack:///./routes_nonrecursive_\\.js$?");
+	eval("module.exports = _;\n\n/*****************\n ** WEBPACK FOOTER\n ** external \"_\"\n ** module id = 1\n ** module chunks = 0\n **/\n//# sourceURL=webpack:///external_%22_%22?");
 
 /***/ },
 /* 2 */
-/***/ function(module, exports) {
+/***/ function(module, exports, __webpack_require__) {
 
-	eval("'use strict';\n\nmodule.exports = function () {\n  console.log('About page');\n};\n\n/*****************\n ** WEBPACK FOOTER\n ** ./routes/about.js\n ** module id = 2\n ** module chunks = 0\n **/\n//# sourceURL=webpack:///./routes/about.js?");
+	eval("var map = {\n\t\"./about.js\": 3,\n\t\"./home.js\": 4\n};\nfunction webpackContext(req) {\n\treturn __webpack_require__(webpackContextResolve(req));\n};\nfunction webpackContextResolve(req) {\n\treturn map[req] || (function() { throw new Error(\"Cannot find module '\" + req + \"'.\") }());\n};\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = 2;\n\n\n/*****************\n ** WEBPACK FOOTER\n ** ./routes nonrecursive \\.js$\n ** module id = 2\n ** module chunks = 0\n **/\n//# sourceURL=webpack:///./routes_nonrecursive_\\.js$?");
 
 /***/ },
 /* 3 */
 /***/ function(module, exports) {
 
-	eval("'use strict';\n\nmodule.exports = function () {\n  console.log('Home page');\n};\n\n/*****************\n ** WEBPACK FOOTER\n ** ./routes/home.js\n ** module id = 3\n ** module chunks = 0\n **/\n//# sourceURL=webpack:///./routes/home.js?");
+	eval("'use strict';\n\nmodule.exports = function () {\n  console.log('About page');\n};\n\n/*****************\n ** WEBPACK FOOTER\n ** ./routes/about.js\n ** module id = 3\n ** module chunks = 0\n **/\n//# sourceURL=webpack:///./routes/about.js?");
+
+/***/ },
+/* 4 */
+/***/ function(module, exports) {
+
+	eval("'use strict';\n\nmodule.exports = function () {\n  console.log('Home page');\n};\n\n/*****************\n ** WEBPACK FOOTER\n ** ./routes/home.js\n ** module id = 4\n ** module chunks = 0\n **/\n//# sourceURL=webpack:///./routes/home.js?");
 
 /***/ }
 /******/ ]);
