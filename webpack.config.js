@@ -44,6 +44,9 @@ var common_config = {
           // Module build failed: ReferenceError: Unknown plugin "transform-runtime" specified in "base" at 0, attempted to resolve relative to "/Users/administrator/node_modules/lodash/collection"
           // plugins: ['transform-runtime'] 
         }
+      }, {
+        test: /old\.js$/,
+        loader: 'imports?workSettings=>{delay:1000}!exports?Work'        
       }
     ],
   },

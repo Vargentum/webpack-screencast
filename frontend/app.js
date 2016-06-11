@@ -36,6 +36,6 @@ console.log(map(users, 'name')) // * from ProvidePlugin
 
 /* Working with old scripts */
 
-const Work = require('imports?workSettings=>{delay:1000}!exports?Work!old')
+const Work = require('old')
 Work()
 
